@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Sample data (replace with your actual data)
+labels = ['Región 1', 'Región 2', 'Región 3', 'Región 4']
+sizes = [12.3, 17.5, 26.7, 43.5]
+
+# Create a pie chart
+plt.pie(sizes, labels=labels)
+
+# Set title and legend
+plt.title('Presupuesto Codificado 2024 por Región')
+plt.legend()
+
+# Show the plot
+plt.show()

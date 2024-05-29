@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Sample data (replace with your actual data)
+data = {
+    'País': ['ALEMANIA', 'BRASIL', 'CHILE', 'CHINA', 'COLOMBIA', 'CUBA'],
+    'Presupuesto Devengado (millones)': [26.26822, 3.51768, 2.31690, 1.88268, 7.02477, 4.35000]
+}
+
+# Create a Pandas DataFrame
+df = pd.DataFrame(data)
+
+# Create a bar chart
+plt.bar(df['País'], df['Presupuesto Devengado (millones)'])
+
+# Set title and labels
+plt.title('Presupuesto Devengado por País')
+plt.xlabel('País')
+plt.ylabel('Presupuesto Devengado (millones)')
+
+# Show the plot
+plt.show()
